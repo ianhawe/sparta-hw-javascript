@@ -1,39 +1,39 @@
+var bob = true;
 
-var n = 0;
-var p = 1000;
-while (n > p) {
-    n++
-    var num1 = prompt("Hello please enter the first number!");
-    var num2 = prompt("Please enter your second number!");
-    var symbol = prompt("Please enter the operator you wish to do");
+var a = prompt("enter a number");
+a = parseInt(a);
 
-    num1 = parseInt(num1);
-    num2 = parseInt(num2);
-    var results;
-
-
-    switch (symbol) {
-
-        case "/":
-            results = num1 / num2;
-            alert(results);
-            break;
-        case "-":
-            results = num1 - num2;
-            alert(results);
-            break;
-        case "*":
-            results = num1 * num2;
-            alert(results);
-            multiply(results);
-            break;
-
-        default:
-            results = num1 + num2;
-            alert(results);
-            break;
+while (bob = true) {
+    var input1 = prompt("Please enter a number here");
+    input1 = parseInt(input1);
+    if (input1 === "quit") {
+        break;
+        break;
     }
+    else {
+        var input2 = prompt("please select an operator");
 
+        if (input2 === "quit") {
+            bob = false;
+            window.close();
+            break;
 
+        }
+        else if (input2 === "*") {
+            a = a * input1;
+            alert(a);
+        }
+        else if (input2 == "/") {
+            a = a / input1;
+            alert(a);
+        }
+        else if (input2 == "-") {
+            a = a - input1;
+            alert(a);
+        }
+        else {
+            a = a + input1;
+            alert(a);
+        }
+    }
 }
-
