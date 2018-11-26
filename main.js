@@ -1,14 +1,18 @@
 var bob = true;
 
 var a = prompt("enter a number");
-a = parseInt(a);
+
+a = parseFloat(a);
 
 while (bob = true) {
     var input1 = prompt("Please enter a number here");
-    input1 = parseInt(input1);
+    input1 = parseFloat(input1);
     if (input1 === "quit") {
+        bob = false;
+        window.close();
         break;
-        break;
+
+
     }
     else {
         var input2 = prompt("please select an operator");
